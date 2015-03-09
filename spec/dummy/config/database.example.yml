@@ -1,0 +1,9 @@
+default: &default
+  adapter: postgresql
+  username: entity_models
+  pool: 5
+  timeout: 5000
+
+test:
+  <<: *default
+  database: entity_models_test
